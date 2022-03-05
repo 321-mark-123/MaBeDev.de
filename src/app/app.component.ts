@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit { //implements OnInit == Onload
   imgs = ['binaercode.jpg', 'brain.jpg', 'codescreen.jpg'];
+  headlines = ['Bring engineering to the next level', 'born to code', 'best practise'];
+
   currentImg = 0;
   showImg = true
 
