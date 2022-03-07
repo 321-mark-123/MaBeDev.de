@@ -1,5 +1,6 @@
 header {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   height: 80px;
@@ -11,7 +12,7 @@ header {
   padding-right: 120px;
 
   a {
-    color: white;
+    color: rgba(99, 183, 183, 1);
     text-decoration: none;
     margin-left: 32px;
     font-size: 24px;
@@ -25,12 +26,13 @@ header {
   img {
     margin-top: 32px;
     height: 100px;
+    cursor: pointer;
   }
 }
 
 .darkLinks {
   a {
-    color: rgba (99, 183, 183, 1);
+    color: rgba(99, 183, 183, 1);
 
     &:hover {
       color: rgba(179, 63, 64, 0.8);

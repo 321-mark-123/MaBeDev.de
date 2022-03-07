@@ -6,15 +6,12 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   currentRoute = '';
 
-  constructor(private router: Router) {}
+  constructor(public router: Router) {}
 
-  ngOnInit() {
-    this.currentRoute = this.router.url;
-    console.log(this.router.url);
 
-  }
 
 }
+

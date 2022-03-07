@@ -1,2 +1,4 @@
-<app-menu [darkMode]="currentRoute !== '/'"></app-menu>
-<router-outlet></router-outlet>
+<app-menu [darkMode]="router.url !== '/'"></app-menu>
+<div [class.allDiv]="router.url !== '/'">
+  <router-outlet></router-outlet>
+</div>
