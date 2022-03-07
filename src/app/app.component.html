@@ -1,13 +1,2 @@
-<div class="slideShowDiv">
-  <img
-    *ngIf="showImg"
-    class="imgSlideShow"
-    src="assets/img/{{ imgs[currentImg] }}"
-    alt=""
-    srcset=""
-  />
-</div>
-
-<div *ngIf="showImg" class="slideShowDiv slideShowOverl fadeIn">
-  <p>{{ headlines[currentImg] }}</p>
-</div>
+<app-menu [darkMode]="currentRoute == '/'"></app-menu>
+<router-outlet></router-outlet>
